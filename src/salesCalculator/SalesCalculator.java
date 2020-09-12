@@ -1,3 +1,6 @@
+/*Program should use a SWITCH statement to determine the retail price for each product. It should calculate and display the total retail value of all products sold. 
+Use a sentinel-controlled loop to determine when the program should stop looping and display the final results.*/
+
 package salesCalculator;
 import java.util.Scanner;
 public class SalesCalculator {
@@ -17,7 +20,7 @@ public class SalesCalculator {
 		System.out.println("Would you like to enter products? yes or no ");
 		proceed = input.nextLine();
 		
-		while (proceed == "yes"); {
+		while (proceed == "yes"); {//I tried making this != "no" but it won't enter the loop
 			
 			System.out.print("Enter Product Number: ");
 			int prodnum = input.nextInt();
@@ -53,6 +56,6 @@ public class SalesCalculator {
 			proceed = input.nextLine();
 		}
 	
-	System.out.println(total);	
+	System.out.println(total);	//Only goes through one iteration then breaks out of the while loop
 	}
 }
